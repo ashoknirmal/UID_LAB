@@ -1,0 +1,41 @@
+/* Hover effect on the card */
+.user-profile-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.user-profile-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Animation for the profile image */
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  70% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.animated-avatar {
+  animation: bounceIn 1s;
+}
+
+/* Hover effect on the button */
+.btn-primary {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  transform: scale(1.1);
+}
