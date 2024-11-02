@@ -1,0 +1,128 @@
+/* Global Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background-color: #f4f4f9;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.app {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  text-align: center;
+}
+
+h1 {
+  color: #5d5c61;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.add-task input {
+  width: 65%;
+  padding: 10px;
+  border-radius: 25px;
+  border: 1px solid #ddd;
+  outline: none;
+  transition: 0.3s;
+  font-size: 1rem;
+}
+
+.add-task input:focus {
+  border-color: #5d5c61;
+}
+
+.add-task button {
+  padding: 10px 20px;
+  margin-left: 10px;
+  background-color: #5d5c61;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 1rem;
+}
+
+.add-task button:hover {
+  background-color: #379683;
+}
+
+.filter button {
+  padding: 8px 15px;
+  margin: 10px 5px;
+  background-color: #5d5c61;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.filter button:hover {
+  background-color: #379683;
+}
+
+.task-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.task-list li {
+  background-color: #fafafa;
+  margin: 10px 0;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.task-list li:hover {
+  transform: scale(1.02);
+}
+
+.task-list li.completed span {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.buttons {
+  display: flex;
+  gap: 5px;
+}
+
+.buttons .edit {
+  background-color: #6c63ff;
+}
+
+.buttons .delete {
+  background-color: #f05454;
+}
+
+.buttons button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.buttons button:hover {
+  opacity: 0.8;
+}
+
+input[type='checkbox'] {
+  margin-right: 10px;
+  cursor: pointer;
+}
